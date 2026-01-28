@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politică de Confidențialitate pentru Măsurare arbori</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        h1 {
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        code {
+            background-color: #eee;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .highlight {
+            background-color: #e8f4fd;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Politică de Confidențialitate pentru Măsurare arbori</h1>
+        <p><strong>Data intrării în vigoare:</strong> 24 Iulie 2024</p>
+        
+        <p>Această pagină vă informează despre politicile noastre privind colectarea, utilizarea și dezvăluirea datelor atunci când utilizați aplicația mobilă Măsurare arbori („Aplicația”) și opțiunile pe care le aveți asociate cu aceste date.</p>
+
+        <h2>1. Informații Colectate și Utilizare</h2>
+        <p>Măsurare arbori este concepută pentru a funcționa cu un grad maxim de confidențialitate. Majoritatea datelor sunt procesate și stocate exclusiv pe dispozitivul dumneavoastră.</p>
+
+        <div class="highlight">
+            <p><strong>Principiul de bază:</strong> Datele dumneavoastră de măsurare (arbori, specii, diametre, înălțimi, volume, locații) sunt stocate <strong>doar local, pe dispozitivul dumneavoastră</strong>. Noi, ca dezvoltatori, nu avem acces la aceste date.</p>
+        </div>
+
+        <h3>a. Datele Camerei (Camera Data)</h3>
+        <p>Aplicația utilizează camera dispozitivului pentru două funcționalități principale:</p>
+        <ul>
+            <li><strong>Măsurători în Realitate Augmentată (AR):</strong> Pentru a suprapune puncte virtuale peste lumea reală și a calcula distanțe, diametre și înălțimi.</li>
+            <li><strong>Relascopul Bitterlich:</strong> Pentru a oferi o vizualizare a mediului înconjurător pe fundalul interfeței de măsurare.</li>
+        </ul>
+        <p><strong>Important:</strong> Fluxul video de la cameră este procesat <strong>în timp real, direct pe dispozitiv</strong>. Aplicația <strong>NU</strong> stochează, înregistrează, salvează sau transmite imagini sau secvențe video. Odată ce închideți ecranul de măsurare, nicio dată vizuală nu este reținută.</p>
+
+        <h3>b. Datele de Localizare (GPS)</h3>
+        <p>Aplicația utilizează serviciile de localizare ale dispozitivului pentru a obține coordonatele geografice (latitudine și longitudine).</p>
+        <ul>
+            <li><strong>Scop:</strong> Locația este folosită <strong>exclusiv</strong> pentru a asocia coordonate GPS fiecărui arbore măsurat, permițând vizualizarea acestora pe o hartă și includerea lor în rapoartele de export.</li>
+            <li><strong>Colectare:</strong> Datele de locație sunt solicitate doar atunci când vă aflați în ecranul de măsurare AR și funcționalitatea este activă.</li>
+            <li><strong>Stocare:</strong> Coordonatele GPS sunt salvate împreună cu celelalte date ale arborelui (specie, diametru etc.) în baza de date locală a aplicației, pe dispozitivul dumneavoastră.</li>
+        </ul>
+
+        <h3>c. Date Stocate pe Dispozitiv (Storage)</h3>
+        <p>Aplicația are nevoie să scrie date pe dispozitivul dumneavoastră în următoarea situație:</p>
+        <ul>
+            <li><strong>Export de Rapoarte PDF:</strong> Când alegeți să exportați o listă de arbori, aplicația generează un fișier în format PDF. Această acțiune este inițiată <strong>exclusiv de dumneavoastră</strong>. Dumneavoastră controlați unde este salvat acest fișier pe dispozitiv.</li>
+        </ul>
+        <p>Aplicația <strong>NU</strong> accesează, citește sau modifică alte fișiere personale de pe dispozitiv (cum ar fi fotografii, documente, contacte etc.).</p>
+
+        <h2>2. Permisiuni Solicitate în Aplicație</h2>
+        <p>Pentru a funcționa corect, Măsurare arbori solicită următoarele permisiuni:</p>
+        <ul>
+            <li><code>android.permission.CAMERA</code>: <strong>Obligatorie.</strong> Este esențială pentru funcționalitățile de bază ale aplicației: măsurătorile în Realitate Augmentată și relascopul Bitterlich. Fără acces la cameră, aplicația nu poate efectua măsurători.</li>
+            <li><code>android.permission.ACCESS_FINE_LOCATION</code>: <strong>Opțională.</strong> Este necesară doar dacă doriți să salvați locația exactă a arborilor măsurați. Puteți refuza această permisiune, iar aplicația va funcționa în continuare, dar fără posibilitatea de a înregistra coordonate GPS.</li>
+        </ul>
+
+        <h2>3. Servicii Terțe Părți</h2>
+        <p>Aplicația utilizează anumite servicii terțe pentru a oferi o funcționalitate completă. Aceste servicii au propriile lor politici de confidențialitate.</p>
+        <ul>
+            <li><strong>Google Play Services for AR (ARCore):</strong> Utilizat pentru funcționalitatea de Realitate Augmentată. Acest serviciu poate colecta date de diagnosticare și utilizare. <a href="https://policies.google.com/privacy" target="_blank">Politica de Confidențialitate Google</a>.</li>
+            <li><strong>OpenStreetMap (OSM):</strong> Utilizat pentru afișarea hărților în secțiunea de vizualizare a parcelelor. Când vizualizați harta, aplicația poate descărca porțiuni de hartă (tiles) de pe serverele OSM. <a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy" target="_blank">Politica de Confidențialitate OSM</a>.</li>
+        </ul>
+
+        <h2>4. Securitatea Datelor</h2>
+        <p>Deoarece toate datele dumneavoastră de măsurare sunt stocate local, securitatea acestora depinde în mare măsură de securitatea generală a dispozitivului dumneavoastră. Luăm măsuri rezonabile pentru a proteja datele în interiorul aplicației, dar nicio metodă de stocare electronică nu este 100% sigură.</p>
+
+        <h2>5. Confidențialitatea Copiilor</h2>
+        <p>Serviciile noastre nu se adresează persoanelor cu vârsta sub 13 ani. Nu colectăm cu bună știință informații de identificare personală de la copii sub 13 ani.</p>
+
+        <h2>6. Modificări ale Acestei Politici de Confidențialitate</h2>
+        <p>Putem actualiza Politica noastră de Confidențialitate din când în când. Vă vom notifica cu privire la orice modificare prin postarea noii Politici de Confidențialitate pe această pagină.</p>
+        <p>Vă recomandăm să revizuiți periodic această Politică de Confidențialitate pentru orice modificare.</p>
+
+        <h2>7. Contactați-ne</h2>
+        <p>Dacă aveți întrebări despre această Politică de Confidențialitate, vă rugăm să ne contactați la adresa de e-mail: [<strong>nicolaflorin00@icloud.com</strong>].</p>
+    </div>
+</body>
+</html>
