@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>TreeMeasureAR – Politica de Confidențialitate Completă</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f9fafb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --accent: #1a5f2a;
+      --link: #2563eb;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111827;
+        --card: #1f2937;
+        --text: #f9fafb;
+        --muted: #9ca3af;
+        --border: #374151;
+        --accent: #22c55e;
+        --link: #60a5fa;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.75;
+      background: var(--bg);
+      color: var(--text);
+      max-width: 860px;
+      margin: auto;
+      padding: 24px 20px 60px;
+    }
+    header {
+      background: var(--accent);
+      color: #fff;
+      border-radius: 14px;
+      padding: 24px;
+      margin-bottom: 28px;
+    }
+    header h1 { font-size: 1.4rem; font-weight: 700; }
+    header p { font-size: .9rem; opacity: .88; margin-top: 6px; }
+    nav { margin-top: 14px; display: flex; gap: 12px; flex-wrap: wrap; }
+    nav a {
+      color: #fff;
+      background: rgba(255,255,255,.18);
+      border-radius: 8px;
+      padding: 5px 12px;
+      font-size: .85rem;
+      text-decoration: none;
+      border: 1px solid rgba(255,255,255,.3);
+    }
+    nav a:hover { background: rgba(255,255,255,.3); }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 20px;
+    }
+    h2 { font-size: 1.15rem; color: var(--accent); border-bottom: 2px solid var(--border); padding-bottom: 8px; margin-bottom: 16px; }
+    h3 { font-size: .98rem; font-weight: 700; margin: 18px 0 6px; }
+    p { margin-bottom: 10px; }
+    ul, ol { padding-left: 20px; margin-bottom: 12px; }
+    li { margin-bottom: 5px; }
+    strong { color: var(--accent); }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .chip {
+      display: inline-block;
+      background: #dcfce7;
+      color: #166534;
+      border-radius: 5px;
+      padding: 1px 8px;
+      font-size: .8rem;
+      font-weight: 600;
+      margin-right: 4px;
+    }
+    @media (prefers-color-scheme: dark) {
+      .chip { background: #14532d; color: #86efac; }
+    }
+    .no-chip {
+      display: inline-block;
+      background: #fee2e2;
+      color: #991b1b;
+      border-radius: 5px;
+      padding: 1px 8px;
+      font-size: .8rem;
+      font-weight: 600;
+    }
+    @media (prefers-color-scheme: dark) {
+      .no-chip { background: #450a0a; color: #fca5a5; }
+    }
+    .divider { border: none; border-top: 2px dashed var(--border); margin: 32px 0 24px; }
+    .updated { font-size: .82rem; color: var(--muted); margin-bottom: 14px; }
+    footer { text-align: center; font-size: .85rem; color: var(--muted); margin-top: 40px; }
+    table { width: 100%; border-collapse: collapse; font-size: .88rem; margin: 10px 0 16px; }
+    th { background: var(--accent); color: #fff; padding: 8px 10px; text-align: left; font-weight: 600; }
+    td { padding: 7px 10px; border-bottom: 1px solid var(--border); vertical-align: top; }
+    tr:last-child td { border-bottom: none; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🌲 TreeMeasureAR — Politica de Confidențialitate Completă</h1>
+  <p>Conform cerințelor Google Play Data Safety · August 2026</p>
+  <nav>
+    <a href="index.html">← Acasă</a>
+    <a href="stergere-date.html">🗑 Ștergere Date</a>
+  </nav>
+</header>
+
+<!-- ══ ROMÂNĂ ══ -->
+<div class="card">
+  <p class="updated">🇷🇴 Română · Ultima actualizare: august 2026</p>
+
+  <h2>1. Identitatea operatorului</h2>
+  <p>
+    Aplicația <strong>TreeMeasureAR (MasurareArbori)</strong> este dezvoltată și publicată de
+    <strong>Florin Nicola</strong>, contact: <a href="mailto:nicolaflorin00@icloud.com">nicolaflorin00@icloud.com</a>.
+  </p>
+
+  <h2>2. Date colectate și scopul colectării</h2>
+  <p>Aplicația colectează și stochează <strong>exclusiv pe dispozitivul utilizatorului</strong>:</p>
+  <table>
+    <tr>
+      <th>Categorie date</th>
+      <th>Detalii</th>
+      <th>Obligatoriu?</th>
+    </tr>
+    <tr>
+      <td>Măsurători forestiere</td>
+      <td>Diametru (D1, D2, Dm), înălțime, volum, suprafața de bază, număr arbore, clasă calitate, specie, unitate amenajistică</td>
+      <td><span class="chip">Da</span> — funcționalitatea de bază</td>
+    </tr>
+    <tr>
+      <td>Locație GPS (precisă)</td>
+      <td>Coordonate WGS84 (latitudine, longitudine) atașate fiecărei măsurători și punctelor de traseu GPS</td>
+      <td><span class="no-chip">Opțional</span> — utilizatorul acordă permisiunea</td>
+    </tr>
+    <tr>
+      <td>Locație aproximativă</td>
+      <td>Derivată din aceeași permisiune <code>ACCESS_FINE_LOCATION</code></td>
+      <td><span class="no-chip">Opțional</span></td>
+    </tr>
+    <tr>
+      <td>Fotografii cioate</td>
+      <td>Poze ale cioatelor, salvate local cu watermark (coordonate GPS + număr cioată)</td>
+      <td><span class="no-chip">Opțional</span> — funcție separată de inventariere cioate</td>
+    </tr>
+    <tr>
+      <td>Setări aplicație</td>
+      <td>Înălțimea operatorului, factorul de corecție diametru, ultima unitate amenajistică folosită</td>
+      <td><span class="chip">Da</span> — preferințe locale</td>
+    </tr>
+  </table>
+
+  <h2>3. Mod de stocare</h2>
+  <ul>
+    <li>Toate datele sunt stocate în baza de date internă a aplicației (<code>treemeasurear.db</code>) pe dispozitivul utilizatorului.</li>
+    <li>Nu există server propriu. Nu există cont de utilizator. Nu există sincronizare în cloud.</li>
+    <li>Fotografiile sunt salvate în memoria internă a dispozitivului.</li>
+    <li>Setările sunt în <code>SharedPreferences</code> locale.</li>
+  </ul>
+
+  <h2>4. Transmitere și partajare cu terți</h2>
+  <ul>
+    <li><strong>Nu există transmitere automată</strong> a datelor către niciun server sau terț.</li>
+    <li>Exportul fișierelor (CSV, PDF, GeoJSON) este inițiat <strong>exclusiv de utilizator</strong> și trimis prin aplicațiile de pe dispozitiv (email, WhatsApp etc.).</li>
+    <li>Harta din aplicație folosește tile-uri OpenStreetMap (descărcate via HTTP); niciun identificator al utilizatorului nu este trimis.</li>
+    <li>Nu există SDK-uri de publicitate, analiză (Analytics, Firebase, Crashlytics) sau third-party tracking.</li>
+  </ul>
+
+  <h2>5. Permisiuni cerute</h2>
+  <ul>
+    <li><span class="chip">CAMERA</span> — necesară pentru realitatea augmentată și fotografierea cioatelor</li>
+    <li><span class="no-chip">ACCESS_FINE_LOCATION</span> — opțional; solicitat numai pentru geotagging și traseu GPS</li>
+    <li><span class="no-chip">READ_EXTERNAL_STORAGE</span> — solicitat numai pe Android &lt; 13 pentru backup/restore</li>
+  </ul>
+
+  <h2>6. Retenție date</h2>
+  <p>Datele sunt păstrate pe dispozitiv până când utilizatorul le șterge explicit (buton în aplicație) sau dezinstalează aplicația.</p>
+
+  <h2>7. Drepturile utilizatorilor</h2>
+  <ul>
+    <li><strong>Acces:</strong> toate datele sunt vizibile în aplicație (ecranul Istoric)</li>
+    <li><strong>Export:</strong> CSV, PDF, GeoJSON din ecranul Export</li>
+    <li><strong>Ștergere individuală:</strong> apăsând ținut pe o înregistrare → Șterge</li>
+    <li><strong>Ștergere totală:</strong> butonul 🗑 din colțul dreapta-sus al ecranului principal</li>
+    <li><strong>Portabilitate:</strong> Backup → export fișier <code>.db</code></li>
+  </ul>
+  <p><a href="stergere-date.html">→ Instrucțiuni detaliate ștergere date</a></p>
+
+  <h2>8. Securitate</h2>
+  <p>Datele rămân pe dispozitiv — nu există transmisie în rețea inițiată de aplicație, nu există risc de breșă la server extern. Securitatea fizică a dispozitivului este responsabilitatea utilizatorului.</p>
+
+  <h2>9. Modificări ale politicii</h2>
+  <p>Orice modificare a politicii de confidențialitate va fi publicată pe această pagină. Data ultimei actualizări este afișată în antet.</p>
+
+  <h2>10. Contact</h2>
+  <p>Email: <a href="mailto:nicolaflorin00@icloud.com">nicolaflorin00@icloud.com</a></p>
+</div>
+
+<hr class="divider">
+
+<!-- ══ ENGLISH ══ -->
+<div class="card">
+  <p class="updated">🇬🇧 English · Last updated: August 2026</p>
+
+  <h2>1. Data controller</h2>
+  <p>
+    <strong>TreeMeasureAR</strong> is developed and published by
+    <strong>Florin Nicola</strong>, contact: <a href="mailto:nicolaflorin00@icloud.com">nicolaflorin00@icloud.com</a>.
+  </p>
+
+  <h2>2. Data collected and purpose</h2>
+  <p>The app collects and stores data <strong>exclusively on the user's device</strong>:</p>
+  <table>
+    <tr>
+      <th>Data category</th>
+      <th>Details</th>
+      <th>Required?</th>
+    </tr>
+    <tr>
+      <td>Forestry measurements</td>
+      <td>Diameter (D1, D2, Dm), height, volume, basal area, tree number, quality class, species, forest unit</td>
+      <td><span class="chip">Yes</span> — core functionality</td>
+    </tr>
+    <tr>
+      <td>Precise GPS location</td>
+      <td>WGS84 coordinates attached to each measurement and GPS track points</td>
+      <td><span class="no-chip">Optional</span> — user grants permission</td>
+    </tr>
+    <tr>
+      <td>Approximate location</td>
+      <td>Derived from same <code>ACCESS_FINE_LOCATION</code> permission</td>
+      <td><span class="no-chip">Optional</span></td>
+    </tr>
+    <tr>
+      <td>Stump photos</td>
+      <td>Photos saved locally with watermark (GPS coordinates + stump number)</td>
+      <td><span class="no-chip">Optional</span> — separate stump inventory feature</td>
+    </tr>
+    <tr>
+      <td>App settings</td>
+      <td>Operator eye height, diameter correction factor, last used forest unit</td>
+      <td><span class="chip">Yes</span> — local preferences</td>
+    </tr>
+  </table>
+
+  <h2>3. Storage</h2>
+  <ul>
+    <li>All data is stored in the app's internal database (<code>treemeasurear.db</code>) on the user's device.</li>
+    <li>No server, no user account, no cloud sync.</li>
+    <li>Photos are saved in the device's internal storage.</li>
+    <li>Settings are stored in local <code>SharedPreferences</code>.</li>
+  </ul>
+
+  <h2>4. Sharing with third parties</h2>
+  <ul>
+    <li><strong>No automatic data transmission</strong> to any server or third party.</li>
+    <li>File export (CSV, PDF, GeoJSON) is initiated <strong>exclusively by the user</strong>.</li>
+    <li>The in-app map fetches OpenStreetMap tiles via HTTP; no user identifier is sent.</li>
+    <li>No advertising, analytics (Firebase, Crashlytics), or third-party tracking SDKs.</li>
+  </ul>
+
+  <h2>5. Permissions</h2>
+  <ul>
+    <li><span class="chip">CAMERA</span> — required for augmented reality and stump photography</li>
+    <li><span class="no-chip">ACCESS_FINE_LOCATION</span> — optional; requested only for geotagging and GPS track</li>
+    <li><span class="no-chip">READ_EXTERNAL_STORAGE</span> — requested only on Android &lt; 13 for backup/restore</li>
+  </ul>
+
+  <h2>6. Data retention</h2>
+  <p>Data is retained on the device until the user explicitly deletes it (in-app button) or uninstalls the app.</p>
+
+  <h2>7. User rights</h2>
+  <ul>
+    <li><strong>Access:</strong> all data visible in the app (History screen)</li>
+    <li><strong>Export:</strong> CSV, PDF, GeoJSON from the Export screen</li>
+    <li><strong>Individual deletion:</strong> long-press a record → Delete</li>
+    <li><strong>Delete all:</strong> 🗑 button in the top-right corner of the main screen</li>
+    <li><strong>Portability:</strong> Backup → export <code>.db</code> file</li>
+  </ul>
+  <p><a href="stergere-date.html">→ Detailed data deletion instructions</a></p>
+
+  <h2>8. Security</h2>
+  <p>Data remains on the device — no network transmission initiated by the app, no risk of external server breach. Physical device security is the user's responsibility.</p>
+
+  <h2>9. Policy changes</h2>
+  <p>Any changes to this privacy policy will be published on this page. The last update date is shown in the header.</p>
+
+  <h2>10. Contact</h2>
+  <p>Email: <a href="mailto:nicolaflorin00@icloud.com">nicolaflorin00@icloud.com</a></p>
+</div>
+
+<footer>
+  &copy; 2026 TreeMeasureAR · Florin Nicola ·
+  <a href="mailto:nicolaflorin00@icloud.com">nicolaflorin00@icloud.com</a>
+</footer>
+
+</body>
+</html>

@@ -2,59 +2,270 @@
 <html lang="ro">
 <head>
   <meta charset="UTF-8">
-  <title>MasurareArbori – Politica de Confidențialitate / Privacy Policy</title>
+  <title>TreeMeasureAR – Politica de Confidențialitate</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-  :root{color-scheme: light dark;}
-  body { font-family: Arial, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, sans-serif; line-height: 1.6; max-width: 960px; margin: auto; padding: 24px; }
-  header { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
-  h1, h2 { color: #1f2937; }
-  .card { background:#ffffff; border:1px solid #e5e7eb; border-radius:12px; padding:18px; margin-top:16px; box-shadow: 0 2px 8px rgba(0,0,0,.04); }
-  a { color:#2563eb; text-decoration:none; }
-  a:hover { text-decoration:underline; }
-  footer { margin-top: 40px; font-size: 14px; color: #6b7280; }
-  .divider { border: none; border-top: 1px solid #e5e7eb; margin: 28px 0; }
+    :root {
+      color-scheme: light dark;
+      --bg: #f9fafb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --accent: #1a5f2a;
+      --link: #2563eb;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111827;
+        --card: #1f2937;
+        --text: #f9fafb;
+        --muted: #9ca3af;
+        --border: #374151;
+        --accent: #22c55e;
+        --link: #60a5fa;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.7;
+      background: var(--bg);
+      color: var(--text);
+      max-width: 860px;
+      margin: auto;
+      padding: 24px 20px 60px;
+    }
+    header {
+      background: var(--accent);
+      color: #fff;
+      border-radius: 14px;
+      padding: 28px 24px 20px;
+      margin-bottom: 28px;
+    }
+    header h1 { font-size: 1.5rem; font-weight: 700; }
+    header p { font-size: .95rem; opacity: .9; margin-top: 6px; }
+    nav { margin-top: 16px; display: flex; gap: 16px; flex-wrap: wrap; }
+    nav a {
+      color: #fff;
+      background: rgba(255,255,255,.18);
+      border-radius: 8px;
+      padding: 6px 14px;
+      font-size: .875rem;
+      text-decoration: none;
+      border: 1px solid rgba(255,255,255,.3);
+    }
+    nav a:hover { background: rgba(255,255,255,.3); }
+    .lang-badge {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      border-radius: 6px;
+      padding: 2px 10px;
+      font-size: .78rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+      letter-spacing: .04em;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 20px;
+      box-shadow: 0 1px 4px rgba(0,0,0,.06);
+    }
+    h2 { font-size: 1.2rem; color: var(--accent); margin-bottom: 14px; }
+    h3 { font-size: 1rem; font-weight: 600; margin: 16px 0 6px; }
+    p { margin-bottom: 10px; }
+    ul { padding-left: 20px; margin-bottom: 10px; }
+    li { margin-bottom: 4px; }
+    .tag {
+      display: inline-block;
+      background: #dcfce7;
+      color: #166534;
+      border-radius: 5px;
+      padding: 1px 8px;
+      font-size: .8rem;
+      font-weight: 600;
+      margin-right: 4px;
+    }
+    @media (prefers-color-scheme: dark) {
+      .tag { background: #14532d; color: #86efac; }
+    }
+    .row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin-bottom: 8px; }
+    table { width: 100%; border-collapse: collapse; font-size: .9rem; margin-top: 10px; }
+    th { background: var(--accent); color: #fff; padding: 8px 12px; text-align: left; }
+    td { padding: 8px 12px; border-bottom: 1px solid var(--border); }
+    tr:last-child td { border-bottom: none; }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .divider { border: none; border-top: 2px dashed var(--border); margin: 36px 0 28px; }
+    footer { text-align: center; font-size: .85rem; color: var(--muted); margin-top: 40px; }
+    .updated { font-size: .82rem; color: var(--muted); margin-top: 6px; }
   </style>
 </head>
 <body>
-  <header>
-    <h1>MasurareArbori – Privacy / Confidențialitate</h1>
-  </header>
 
-  <div class="card">
-    <h2>Politica de Confidențialitate</h2>
-    <p>Aplicația <strong>MasurareArbori</strong> nu colectează și nu transmite date personale către terți.</p>
-    <h3>Date procesate</h3>
-    <ul>
-      <li>Diametru, înălțime, <strong>volum calculat în funcție de specie</strong> (pe baza coeficienților din tabelul oficial).</li>
-      <li>Locație GPS – numai dacă utilizatorul oferă permisiune.</li>
-      <li>Toate datele se salvează local pe dispozitiv; exportul (CSV/PDF) este inițiat manual de utilizator.</li>
-    </ul>
-    <h3>Transmitere</h3>
-    <p>Nu există transmitere automată de date către servere externe.</p>
-    <h3>Drepturile utilizatorilor</h3>
-    <p>Utilizatorii controlează integral datele locale. Pentru întrebări legate de confidențialitate, ne puteți scrie.</p>
-    <h3>Contact</h3>
-    <p>Email: <a href="mailto:nicolaflorin00@icloud.com">nicolaflorin00@icloud.com</a></p>
+<header>
+  <h1>🌲 TreeMeasureAR — MasurareArbori</h1>
+  <p>Politică de Confidențialitate · Privacy Policy</p>
+  <nav>
+    <a href="privacy.html">📄 Politică Completă</a>
+    <a href="stergere-date.html">🗑 Ștergere Date</a>
+  </nav>
+</header>
 
-    <hr class="divider">
+<!-- ══ ROMÂNĂ ══ -->
+<span class="lang-badge">🇷🇴 Română</span>
 
-    <h2>Privacy Policy</h2>
-    <p>The <strong>TreeMeasure Pro</strong> app does not collect or transmit personal data to third parties.</p>
-    <h3>Processed data</h3>
-    <ul>
-      <li>Diameter, height, and <strong>species-based volume</strong> (computed using coefficients from the official table).</li>
-      <li>GPS location – only if the user grants permission.</li>
-      <li>All data is stored locally on the device; export (CSV/PDF) is initiated manually by the user.</li>
-    </ul>
-    <h3>Transmission</h3>
-    <p>There is no automatic transmission of data to external servers.</p>
-    <h3>User rights</h3>
-    <p>Users fully control their locally stored data. For privacy questions, please contact us.</p>
-    <h3>Contact</h3>
-    <p>Email: <a href="mailto:nicolaflorin00@icloud.com">nicolaflorin00@icloud.com</a></p>
-  </div>
+<div class="card">
+  <h2>Politica de Confidențialitate</h2>
+  <p class="updated">Ultima actualizare: august 2026</p>
 
-  <footer>&copy; 2025 TreeMeasure Pro • <a href="index.html">Acasă / Home</a></footer>
+  <h3>Despre aplicație</h3>
+  <p>
+    <strong>TreeMeasureAR (MasurareArbori)</strong> este o aplicație profesională de inventariere forestieră
+    care folosește realitatea augmentată pentru măsurarea diametrului, înălțimii, coroanei și volumului
+    arborilor, precum și inventarierea cioatelor.
+  </p>
+
+  <h3>Date colectate</h3>
+  <table>
+    <tr>
+      <th>Tip dată</th>
+      <th>Scop</th>
+      <th>Stocare</th>
+    </tr>
+    <tr>
+      <td>Măsurători (diametru, înălțime, volum, suprafața de bază)</td>
+      <td>Funcționalitate principală a aplicației</td>
+      <td>Local pe dispozitiv</td>
+    </tr>
+    <tr>
+      <td>Locație GPS (precisă și aproximativă) — <em>opțional</em></td>
+      <td>Geotagging măsurători, traseu GPS, hartă</td>
+      <td>Local pe dispozitiv</td>
+    </tr>
+    <tr>
+      <td>Fotografii cioate</td>
+      <td>Documentare inventar cioate</td>
+      <td>Local pe dispozitiv</td>
+    </tr>
+    <tr>
+      <td>Specie, unitate amenajistică, clasă de calitate</td>
+      <td>Calcul volum și rapoarte</td>
+      <td>Local pe dispozitiv</td>
+    </tr>
+  </table>
+
+  <h3>Ce NU colectăm</h3>
+  <ul>
+    <li>Nu există cont de utilizator, nu colectăm nume sau email</li>
+    <li>Nu există publicitate sau tracking</li>
+    <li>Nu trimitem date automat către niciun server extern</li>
+    <li>Nu folosim servicii de analiză terțe (Firebase, Analytics etc.)</li>
+  </ul>
+
+  <h3>Partajare cu terți</h3>
+  <p>Datele <strong>nu sunt partajate automat</strong> cu nicio terță parte.
+  Exportul (CSV, PDF, GeoJSON) este inițiat exclusiv de utilizator și trimis unde dorește acesta.</p>
+
+  <h3>Permisiuni necesare</h3>
+  <div class="row"><span class="tag">CAMERA</span> Necesară pentru AR și fotografierea cioatelor</div>
+  <div class="row"><span class="tag">ACCESS_FINE_LOCATION</span> Opțional — pentru geotagging și traseu GPS</div>
+
+  <h3>Ștergerea datelor</h3>
+  <p>Toate datele pot fi șterse direct din aplicație: <strong>Ecranul principal → butonul 🗑 din colțul dreapta-sus → Șterge toate datele</strong>.
+  Dezinstalarea aplicației șterge automat toate datele locale.</p>
+  <p><a href="stergere-date.html">→ Instrucțiuni detaliate ștergere date</a></p>
+
+  <h3>Securitate</h3>
+  <p>Datele sunt stocate exclusiv pe dispozitivul utilizatorului, în baza de date internă a aplicației.
+  Nu există transmisie în rețea, nu există risc de breșă la server.</p>
+
+  <h3>Contact</h3>
+  <p>Email: <a href="mailto:nicolaflorin00@icloud.com">nicolaflorin00@icloud.com</a></p>
+</div>
+
+<hr class="divider">
+
+<!-- ══ ENGLISH ══ -->
+<span class="lang-badge">🇬🇧 English</span>
+
+<div class="card">
+  <h2>Privacy Policy</h2>
+  <p class="updated">Last updated: August 2026</p>
+
+  <h3>About the app</h3>
+  <p>
+    <strong>TreeMeasureAR</strong> is a professional forestry inventory app that uses augmented reality
+    to measure tree diameter, height, crown, and volume, as well as stump inventory for
+    illegal logging assessment.
+  </p>
+
+  <h3>Data collected</h3>
+  <table>
+    <tr>
+      <th>Data type</th>
+      <th>Purpose</th>
+      <th>Storage</th>
+    </tr>
+    <tr>
+      <td>Measurements (diameter, height, volume, basal area)</td>
+      <td>Core app functionality</td>
+      <td>Local on device</td>
+    </tr>
+    <tr>
+      <td>GPS location (precise &amp; approximate) — <em>optional</em></td>
+      <td>Geotagging measurements, GPS track, map view</td>
+      <td>Local on device</td>
+    </tr>
+    <tr>
+      <td>Stump photos</td>
+      <td>Stump inventory documentation</td>
+      <td>Local on device</td>
+    </tr>
+    <tr>
+      <td>Species, forest unit, quality class</td>
+      <td>Volume calculation and reports</td>
+      <td>Local on device</td>
+    </tr>
+  </table>
+
+  <h3>What we do NOT collect</h3>
+  <ul>
+    <li>No user accounts — we do not collect names or email addresses</li>
+    <li>No advertising or tracking</li>
+    <li>No automatic data transmission to external servers</li>
+    <li>No third-party analytics (Firebase, Google Analytics, etc.)</li>
+  </ul>
+
+  <h3>Third-party sharing</h3>
+  <p>Data is <strong>never shared automatically</strong> with any third party.
+  Export (CSV, PDF, GeoJSON) is initiated exclusively by the user.</p>
+
+  <h3>Required permissions</h3>
+  <div class="row"><span class="tag">CAMERA</span> Required for AR and stump photography</div>
+  <div class="row"><span class="tag">ACCESS_FINE_LOCATION</span> Optional — for geotagging and GPS track</div>
+
+  <h3>Data deletion</h3>
+  <p>All data can be deleted from within the app: <strong>Main screen → 🗑 button (top-right) → Delete all data</strong>.
+  Uninstalling the app automatically removes all local data.</p>
+  <p><a href="stergere-date.html">→ Detailed data deletion instructions</a></p>
+
+  <h3>Security</h3>
+  <p>All data is stored exclusively on the user's device, in the app's internal database.
+  There is no network transmission and no server-side breach risk.</p>
+
+  <h3>Contact</h3>
+  <p>Email: <a href="mailto:nicolaflorin00@icloud.com">nicolaflorin00@icloud.com</a></p>
+</div>
+
+<footer>
+  &copy; 2026 TreeMeasureAR · Florin Nicola ·
+  <a href="mailto:nicolaflorin00@icloud.com">nicolaflorin00@icloud.com</a>
+</footer>
+
 </body>
 </html>

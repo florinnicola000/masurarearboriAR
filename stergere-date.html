@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>TreeMeasureAR – Ștergere Date / Data Deletion</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f9fafb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --accent: #1a5f2a;
+      --danger: #dc2626;
+      --danger-bg: #fef2f2;
+      --danger-border: #fecaca;
+      --link: #2563eb;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111827;
+        --card: #1f2937;
+        --text: #f9fafb;
+        --muted: #9ca3af;
+        --border: #374151;
+        --accent: #22c55e;
+        --danger: #f87171;
+        --danger-bg: #450a0a;
+        --danger-border: #7f1d1d;
+        --link: #60a5fa;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.75;
+      background: var(--bg);
+      color: var(--text);
+      max-width: 860px;
+      margin: auto;
+      padding: 24px 20px 60px;
+    }
+    header {
+      background: var(--accent);
+      color: #fff;
+      border-radius: 14px;
+      padding: 24px;
+      margin-bottom: 28px;
+    }
+    header h1 { font-size: 1.4rem; font-weight: 700; }
+    header p { font-size: .9rem; opacity: .88; margin-top: 6px; }
+    nav { margin-top: 14px; display: flex; gap: 12px; flex-wrap: wrap; }
+    nav a {
+      color: #fff;
+      background: rgba(255,255,255,.18);
+      border-radius: 8px;
+      padding: 5px 12px;
+      font-size: .85rem;
+      text-decoration: none;
+      border: 1px solid rgba(255,255,255,.3);
+    }
+    nav a:hover { background: rgba(255,255,255,.3); }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 20px;
+    }
+    .danger-card {
+      background: var(--danger-bg);
+      border: 1px solid var(--danger-border);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-bottom: 20px;
+    }
+    h2 { font-size: 1.15rem; color: var(--accent); border-bottom: 2px solid var(--border); padding-bottom: 8px; margin-bottom: 16px; }
+    h3 { font-size: .98rem; font-weight: 700; margin: 16px 0 6px; }
+    p { margin-bottom: 10px; }
+    ol, ul { padding-left: 20px; margin-bottom: 12px; }
+    li { margin-bottom: 6px; }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .step {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 14px 16px;
+      margin-bottom: 10px;
+    }
+    .step-num {
+      background: var(--accent);
+      color: #fff;
+      border-radius: 50%;
+      width: 28px;
+      height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: .9rem;
+      flex-shrink: 0;
+    }
+    .step-text strong { display: block; margin-bottom: 2px; }
+    .step-text p { margin: 0; font-size: .9rem; color: var(--muted); }
+    .warning {
+      background: #fffbeb;
+      border: 1px solid #fde68a;
+      border-radius: 8px;
+      padding: 12px 16px;
+      font-size: .9rem;
+      color: #92400e;
+      margin: 12px 0;
+    }
+    @media (prefers-color-scheme: dark) {
+      .warning { background: #1c1407; border-color: #78350f; color: #fbbf24; }
+    }
+    .divider { border: none; border-top: 2px dashed var(--border); margin: 32px 0 24px; }
+    footer { text-align: center; font-size: .85rem; color: var(--muted); margin-top: 40px; }
+    .updated { font-size: .82rem; color: var(--muted); margin-bottom: 14px; }
+    code { background: var(--border); border-radius: 4px; padding: 1px 5px; font-size: .87em; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🗑 TreeMeasureAR — Ștergere Date / Data Deletion</h1>
+  <p>Cum să ștergi datele tale din aplicație</p>
+  <nav>
+    <a href="index.html">← Acasă</a>
+    <a href="privacy.html">📄 Politică</a>
+  </nav>
+</header>
+
+<!-- ══ ROMÂNĂ ══ -->
+<div class="card">
+  <p class="updated">🇷🇴 Română · August 2026</p>
+
+  <h2>Cum îți ștergi datele din TreeMeasureAR</h2>
+
+  <p>
+    Toate datele din aplicație sunt stocate <strong>exclusiv pe dispozitivul tău</strong>.
+    Nu există cont de utilizator și nu există date pe un server extern — tot ce ștergi de pe
+    dispozitiv este eliminat definitiv.
+  </p>
+
+  <h3>Opțiunea 1 — Ștergere totală din aplicație</h3>
+
+  <div class="step">
+    <div class="step-num">1</div>
+    <div class="step-text">
+      <strong>Deschide aplicația TreeMeasureAR</strong>
+      <p>Asigură-te că ești pe ecranul principal.</p>
+    </div>
+  </div>
+  <div class="step">
+    <div class="step-num">2</div>
+    <div class="step-text">
+      <strong>Apasă butonul 🗑 din colțul dreapta-sus</strong>
+      <p>Se află în bara de titlu a ecranului principal, lângă butonul ℹ.</p>
+    </div>
+  </div>
+  <div class="step">
+    <div class="step-num">3</div>
+    <div class="step-text">
+      <strong>Confirmă ștergerea</strong>
+      <p>Aplicația îți va cere confirmare înainte de a șterge toate înregistrările.</p>
+    </div>
+  </div>
+
+  <div class="warning">
+    ⚠️ Această acțiune șterge <strong>toate</strong> înregistrările din baza de date.
+    Acțiunea este ireversibilă. Dacă vrei să păstrezi o copie, folosește mai întâi
+    <strong>Export</strong> sau <strong>Backup</strong> din ecranul principal.
+  </div>
+
+  <p><em>Ce se șterge:</em> toate măsurătorile (diametre, înălțimi, volume, cioate, piețe de probă, coroane, circumferințe) și traseele GPS.</p>
+  <p><em>Ce NU se șterge automat:</em> fotografiile cioatelor (salvate în memoria internă) și setările aplicației. Acestea se pot șterge prin dezinstalare.</p>
+
+  <h3>Opțiunea 2 — Ștergere înregistrări individuale</h3>
+
+  <div class="step">
+    <div class="step-num">1</div>
+    <div class="step-text">
+      <strong>Deschide Istoricul</strong>
+      <p>Apasă butonul <strong>Istoric</strong> din bara de jos a ecranului principal.</p>
+    </div>
+  </div>
+  <div class="step">
+    <div class="step-num">2</div>
+    <div class="step-text">
+      <strong>Apasă ținut pe înregistrarea dorită</strong>
+      <p>Apare meniul cu opțiuni: Editează / Șterge.</p>
+    </div>
+  </div>
+  <div class="step">
+    <div class="step-num">3</div>
+    <div class="step-text">
+      <strong>Selectează Șterge și confirmă</strong>
+    </div>
+  </div>
+
+  <h3>Opțiunea 3 — Dezinstalarea aplicației</h3>
+  <p>
+    Dezinstalarea completă a aplicației elimină automat toate datele: baza de date, setările și fotografiile.
+    Aceasta este metoda care garantează ștergerea 100% a oricăror date locale.
+  </p>
+
+  <h3>Solicitare ștergere prin email</h3>
+  <p>
+    Dacă ai nevoie de asistență suplimentară, poți trimite o solicitare la:<br>
+    📧 <a href="mailto:nicolaflorin00@icloud.com?subject=Solicitare%20stergere%20date%20TreeMeasureAR">nicolaflorin00@icloud.com</a>
+  </p>
+  <p>
+    Întrucât datele sunt stocate exclusiv local pe dispozitivul tău și nu avem acces la ele,
+    răspunsul va include instrucțiunile de mai sus. Nu deținem nicio copie a datelor tale pe vreun server.
+  </p>
+</div>
+
+<hr class="divider">
+
+<!-- ══ ENGLISH ══ -->
+<div class="card">
+  <p class="updated">🇬🇧 English · August 2026</p>
+
+  <h2>How to delete your data from TreeMeasureAR</h2>
+
+  <p>
+    All app data is stored <strong>exclusively on your device</strong>.
+    There is no user account and no data on external servers — everything you delete from
+    your device is permanently removed.
+  </p>
+
+  <h3>Option 1 — Delete all data from within the app</h3>
+
+  <div class="step">
+    <div class="step-num">1</div>
+    <div class="step-text">
+      <strong>Open TreeMeasureAR</strong>
+      <p>Make sure you are on the main screen.</p>
+    </div>
+  </div>
+  <div class="step">
+    <div class="step-num">2</div>
+    <div class="step-text">
+      <strong>Tap the 🗑 button in the top-right corner</strong>
+      <p>Located in the main screen title bar, next to the ℹ button.</p>
+    </div>
+  </div>
+  <div class="step">
+    <div class="step-num">3</div>
+    <div class="step-text">
+      <strong>Confirm deletion</strong>
+      <p>The app will ask for confirmation before deleting all records.</p>
+    </div>
+  </div>
+
+  <div class="warning">
+    ⚠️ This action deletes <strong>all</strong> records from the database.
+    This action is irreversible. If you want to keep a copy, use
+    <strong>Export</strong> or <strong>Backup</strong> first.
+  </div>
+
+  <p><em>What is deleted:</em> all measurements (diameters, heights, volumes, stumps, sample plots, crowns, circumferences) and GPS tracks.</p>
+  <p><em>What is NOT automatically deleted:</em> stump photos (saved in internal storage) and app settings. These are removed by uninstalling the app.</p>
+
+  <h3>Option 2 — Delete individual records</h3>
+
+  <div class="step">
+    <div class="step-num">1</div>
+    <div class="step-text">
+      <strong>Open History</strong>
+      <p>Tap the <strong>History</strong> button in the bottom bar of the main screen.</p>
+    </div>
+  </div>
+  <div class="step">
+    <div class="step-num">2</div>
+    <div class="step-text">
+      <strong>Long-press the record you want to delete</strong>
+      <p>A menu appears: Edit / Delete.</p>
+    </div>
+  </div>
+  <div class="step">
+    <div class="step-num">3</div>
+    <div class="step-text">
+      <strong>Select Delete and confirm</strong>
+    </div>
+  </div>
+
+  <h3>Option 3 — Uninstall the app</h3>
+  <p>
+    Completely uninstalling the app automatically removes all data: the database, settings, and photos.
+    This is the method that guarantees 100% deletion of all local data.
+  </p>
+
+  <h3>Deletion request by email</h3>
+  <p>
+    If you need additional assistance, send a request to:<br>
+    📧 <a href="mailto:nicolaflorin00@icloud.com?subject=Data%20Deletion%20Request%20TreeMeasureAR">nicolaflorin00@icloud.com</a>
+  </p>
+  <p>
+    Since data is stored exclusively on your device and we have no access to it,
+    the response will include the instructions above. We do not hold any copy of your data on any server.
+  </p>
+</div>
+
+<footer>
+  &copy; 2026 TreeMeasureAR · Florin Nicola ·
+  <a href="mailto:nicolaflorin00@icloud.com">nicolaflorin00@icloud.com</a>
+</footer>
+
+</body>
+</html>
